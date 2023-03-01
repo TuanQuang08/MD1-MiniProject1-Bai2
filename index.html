@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Tahoma, sans-serif;
+        }
+        .container{
+            padding: 30px;
+            background-color: #efefef;
+        }
+        h1{
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+        }
+        h1:after{
+            content: '';
+            width: 50px;
+            height: 3px;
+            background-color: orange;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        h2{
+            margin-bottom: 30px;
+        }
+        .content-container{
+            display: flex;
+            justify-content: space-between;
+            gap: 5%;
+        }
+        .content-container .left{
+            width: 30%;
+        }
+        .content-container .left p{
+            color: #949393;
+            margin-bottom: 30px;
+        }
+        .content-container .left p i{
+            font-size: 18px;
+        }
+        .content-container .right{
+            width: 70%;
+
+        }
+        .content-container .right form{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+        .content-container .right form input{
+            margin-bottom: 20px;
+            height: 35px;
+            padding: 10px;
+        }
+        .content-container .right form textarea{
+            padding: 10px;
+        }
+        .content-container .right form button{
+            width: 150px;
+            height: 35px;
+            background-color: #58bbbb;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<section class="container">
+    <h1>CONTACT US</h1>
+    <div class="content-container">
+        <div class="left">
+            <h2>Contact Info</h2>
+            <p><i class="fa fa-map-marker-alt"></i> 321 Awesome Street New York, NY 17022</p>
+            <p><i class="fa fa-envelope"></i> info@companyname.com</p>
+            <p><i class="fa fa-phone"></i> +1 800 123 1234</p>
+        </div>
+        <div class="right">
+            <h2>Having Any Query! Or Book an appointment</h2>
+            <form action="">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="text" name="email" placeholder="Your Email">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea rows="8" placeholder="Message"></textarea>
+                <br>
+                <button type="button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
